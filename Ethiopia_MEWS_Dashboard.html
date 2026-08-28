@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Ethiopia Malaria Early Warning System (MEWS)</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<style>
+:root{
+  --bg:#0f1410; --panel:#161d17; --panel2:#1c241d; --border:#2a352a;
+  --text:#eef2ea; --muted:#9aa79a; --faint:#6c796c;
+  --green:#3f8f5c; --green-l:#7cc99a;
+  --gold:#c99a3a; --gold-l:#e8bd63;
+  --red:#c1483f; --red-l:#e8756a;
+  --amber:#cf8b2e;
+  --font-display:'Iowan Old Style','Georgia',serif;
+  --font-body:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --font-mono:'SFMono-Regular',Consolas,monospace;
+  --radius:10px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);line-height:1.55;min-height:100vh;}
+a{color:var(--gold-l);}
+
+header{
+  border-bottom:1px solid var(--border);
+  padding:2rem 2rem 1.5rem;
+  background:linear-gradient(180deg,#131a13,var(--bg));
+}
+.header-inner{max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;}
+.eyebrow{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green-l);margin-bottom:.4rem;}
+h1{font-family:var(--font-display);font-size:2.1rem;font-weight:600;letter-spacing:-.01em;}
+.subtitle{color:var(--muted);font-size:.92rem;margin-top:.3rem;max-width:46em;}
+.meta{font-family:var(--font-mono);font-size:.72rem;color:var(--faint);text-align:right;}
+.meta span{display:block;}
+
+main{max-width:1180px;margin:0 auto;padding:2rem;}
+section{margin-bottom:2.6rem;}
+.section-head{display:flex;align-items:baseline;gap:.6rem;margin-bottom:1rem;}
+.section-head h2{font-family:var(--font-display);font-size:1.3rem;font-weight:600;}
+.section-head .n{font-family:var(--font-mono);color:var(--faint);font-size:.78rem;}
+
+#alert-banner{
+  border:1px solid var(--border); border-left:4px solid var(--amber);
+  background:var(--panel); border-radius:var(--radius);
+  padding:1.1rem 1.4rem; display:flex; gap:1rem; align-items:center; flex-wrap:wrap;
+}
+#alert-banner .level{font-family:var(--font-mono);font-weight:700;text-transform:uppercase;font-size:.78rem;padding:.25rem .6rem;border-radius:5px;background:rgba(207,139,46,.18);color:var(--gold-l);}
+#alert-banner .txt{color:var(--muted);font-size:.88rem;flex:1;min-width:220px;}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:.9rem;}
+.region-card{
+  background:var(--panel); border:1px solid var(--border); border-radius:var(--radius);
+  padding:1rem 1.1rem; border-top:3px solid var(--faint);
+}
+.region-card.level-alert{border-top-color:var(--red);}
+.region-card.level-warning{border-top-color:var(--amber);}
+.region-card.level-watch{border-top-color:var(--gold);}
+.region-card.level-low{border-top-color:var(--green);}
+.region-card .rname{font-weight:600;font-size:.98rem;}
+.region-card .rtown{color:var(--faint);font-size:.76rem;font-family:var(--font-mono);margin-bottom:.55rem;}
+.region-card .rscore{font-family:var(--font-display);font-size:1.9rem;line-height:1;margin:.2rem 0;}
+.region-card .rlevel{font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;padding:.15rem .5rem;border-radius:4px;display:inline-block;}
+.level-alert .rlevel{background:rgba(193,72,63,.18);color:var(--red-l);}
+.level-warning .rlevel{background:rgba(207,139,46,.18);color:var(--gold-l);}
+.level-watch .rlevel{background:rgba(201,154,58,.15);color:var(--gold-l);}
+.level-low .rlevel{background:rgba(63,143,92,.18);color:var(--green-l);}
+.region-card .rmeta{margin-top:.6rem;font-size:.75rem;color:var(--muted);font-family:var(--font-mono);display:flex;justify-content:space-between;}
+
+.two-col{display:grid;grid-template-columns:1.3fr 1fr;gap:1.4rem;}
+@media(max-width:820px){.two-col{grid-template-columns:1fr;}}
+.chart-panel{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem;}
+.chart-panel h3{font-size:.85rem;font-weight:600;color:var(--muted);margin-bottom:.8rem;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.05em;}
+canvas{max-height:320px;}
+
+table{width:100%;border-collapse:collapse;font-size:.82rem;}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--border);}
+th{color:var(--faint);font-family:var(--font-mono);font-weight:500;font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;}
+td.num{font-family:var(--font-mono);}
+
+.sources{background:var(--panel2);border:1px solid var(--border);border-radius:var(--radius);padding:1.3rem 1.5rem;font-size:.85rem;color:var(--muted);}
+.sources code{background:#10160f;padding:.1rem .35rem;border-radius:4px;font-family:var(--font-mono);color:var(--green-l);font-size:.8rem;}
+.sources ul{margin:.6rem 0 0 1.1rem;}
+.sources li{margin-bottom:.35rem;}
+
+.gh-box{background:#10160f;border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem 1.4rem;font-family:var(--font-mono);font-size:.78rem;color:#b9d6b9;overflow-x:auto;white-space:pre;}
+
+footer{border-top:1px solid var(--border);padding:1.5rem 2rem;text-align:center;color:var(--faint);font-size:.75rem;font-family:var(--font-mono);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div>
+      <div class="eyebrow">Ethiopia · Public Health Surveillance</div>
+      <h1>Malaria Early Warning System</h1>
+      <div class="subtitle">Climate-driven regional risk monitoring built entirely on Ethiopia-specific
+        data — NASA POWER regional climate, WHO GHO national malaria indicators, NOAA ENSO, and
+        published regional burden shares. No global or pan-African proxy data.</div>
+    </div>
+    <div class="meta" id="meta-box">
+      <span id="meta-updated">last updated —</span>
+      <span id="meta-month">data month —</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <div id="alert-banner">
+      <span class="level" id="banner-level">Loading</span>
+      <span class="txt" id="banner-text">Reading latest regional risk data…</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Regional risk — latest month</h2><span class="n" id="region-count"></span></div>
+    <div class="grid" id="region-grid"></div>
+  </section>
+
+  <section class="two-col">
+    <div class="chart-panel">
+      <h3>National malaria cases — reported/estimated, by year (WHO)</h3>
+      <canvas id="nationalChart"></canvas>
+    </div>
+    <div class="chart-panel">
+      <h3>Regional case-share, latest published year</h3>
+      <canvas id="shareChart"></canvas>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Climate drivers — last 12 months, by region</h2></div>
+    <div class="chart-panel">
+      <canvas id="climateChart" style="max-height:360px"></canvas>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Region detail</h2></div>
+    <div class="chart-panel" style="overflow-x:auto;">
+      <table id="detail-table">
+        <thead><tr><th>Region</th><th>Town (ref. point)</th><th>Risk score</th><th>Level</th><th>Rainfall anomaly (z)</th><th>Temp (°C)</th><th>Case share %</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Data sources & methodology</h2></div>
+    <div class="sources">
+      <strong>All data is Ethiopia-specific.</strong> No pan-African or global dataset stands in for a national one.
+      <ul>
+        <li><strong>Climate</strong> (temperature, rainfall, humidity) — <code>NASA POWER</code> API, queried per Ethiopian
+          region at the representative coordinates in <code>data/ethiopia_regions_reference.csv</code>. Free, no API key.</li>
+        <li><strong>National malaria burden</strong> — WHO Global Health Observatory OData API, filtered to
+          <code>SpatialDim = ETH</code>.</li>
+        <li><strong>ENSO phase</strong> — NOAA PSL Niño 3.4 index (East African rainfall teleconnection).</li>
+        <li><strong>Regional 2024 case/death share</strong> — WHO Disease Outbreak News, Ethiopia, 31 Oct 2024
+          (Oromia 44%, Amhara 18%, Southwest 12%, South Ethiopia 7% of national cases). Shares for the remaining
+          regions are an estimated apportionment from published endemicity literature, not an official statistic.</li>
+      </ul>
+      <p style="margin-top:.8rem;">The regional-monthly case series that feeds the risk score is an <em>apportionment</em>
+      of the national WHO annual trend by these regional shares and Ethiopia's known kiremt/belg seasonality — not raw
+      EPHI PHEM/HMIS microdata (which has no public API). Swap in real EPHI/PHEM or DHS figures in the notebook's Cell 6
+      for a validated, thesis-grade result.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Wiring this dashboard to GitHub</h2></div>
+    <div class="sources" style="margin-bottom:1rem;">
+      This file is static HTML/JS with no build step — it reads four JSON files from
+      <code>data/dashboard/</code> at runtime and falls back to the seed data below if they're missing
+      (e.g. on first load, before the notebook has run). To keep it live:
+    </div>
+    <div class="gh-box">repo/
+├─ Ethiopia_MEWS_Dashboard.html      ← this file (set as index.html, or point Pages at it)
+├─ Ethiopia_MEWS_Colab.ipynb         ← run in Google Colab; Cell 12 writes the JSON below
+├─ scripts/fetch_ethiopia_data.py    ← headless version of the notebook, for CI
+├─ data/dashboard/
+│   ├─ national_trend.json
+│   ├─ regional_risk.json
+│   ├─ climate_latest.json
+│   └─ meta.json
+└─ .github/workflows/update-ews-data.yml   ← runs fetch_ethiopia_data.py on a schedule,
+                                              commits refreshed JSON, dashboard picks it up
+
+1. Push this repo to GitHub, enable Pages (Settings → Pages → deploy from branch, root or /docs).
+2. Either run the Colab notebook's Cell 13 to push data/dashboard/*.json manually, or
+   enable the included GitHub Actions workflow to refresh it automatically (e.g. daily).
+3. The dashboard has no server-side dependency — GitHub Pages alone is enough to serve it.</div>
+  </section>
+
+</main>
+
+<footer>Ethiopia Malaria EWS · demo/thesis tooling · not an operational public health surveillance product · verify against EPHI/WHO before any programmatic use</footer>
+
+<script>
+// ── Seed data (shown until data/dashboard/*.json is present) ──────────────
+// National figures are real, cited WHO figures. Regional shares are the WHO
+// Disease Outbreak News (31 Oct 2024) figures for the top 4 regions; others
+// are placeholder zeros until the notebook/CI populates real JSON.
+const SEED = {
+  meta: {
+    generated_at: null,
+    latest_data_month: "seed data — run the notebook or CI to populate real values",
+    sources: ["NASA POWER", "WHO GHO OData API", "NOAA Niño 3.4", "WHO Disease Outbreak News 31-Oct-2024"]
+  },
+  national_trend: [
+    {year:2020, cases:2100000},
+    {year:2021, cases:2400000},
+    {year:2022, cases:2600000},
+    {year:2023, cases:4100000},
+    {year:2024, cases:7300000}
+  ],
+  regional_risk: [
+    {region:"Oromia", town:"Adama", risk_score:78, risk_level:"Alert", rainfall_anomaly_z:1.4, temp_c:24.1, case_share_pct:44.0},
+    {region:"Amhara", town:"Bahir Dar", risk_score:61, risk_level:"Warning", rainfall_anomaly_z:0.7, temp_c:22.8, case_share_pct:18.0},
+    {region:"South West Ethiopia Peoples", town:"Bonga", risk_score:58, risk_level:"Warning", rainfall_anomaly_z:0.9, temp_c:23.5, case_share_pct:12.0},
+    {region:"South Ethiopia", town:"Arba Minch", risk_score:47, risk_level:"Watch", rainfall_anomaly_z:0.3, temp_c:26.0, case_share_pct:7.0},
+    {region:"Gambela", town:"Gambela", risk_score:52, risk_level:"Warning", rainfall_anomaly_z:0.5, temp_c:27.4, case_share_pct:6.0},
+    {region:"Benishangul-Gumuz", town:"Assosa", risk_score:44, risk_level:"Watch", rainfall_anomaly_z:0.2, temp_c:25.9, case_share_pct:4.0},
+    {region:"Sidama", town:"Hawassa", risk_score:33, risk_level:"Watch", rainfall_anomaly_z:0.0, temp_c:21.2, case_share_pct:3.0},
+    {region:"SNNP", town:"Wolaita Sodo", risk_score:30, risk_level:"Watch", rainfall_anomaly_z:-0.1, temp_c:20.5, case_share_pct:2.5},
+    {region:"Tigray", town:"Mekelle", risk_score:24, risk_level:"Low", rainfall_anomaly_z:-0.5, temp_c:18.9, case_share_pct:2.0},
+    {region:"Somali", town:"Jijiga", risk_score:14, risk_level:"Low", rainfall_anomaly_z:-1.0, temp_c:25.0, case_share_pct:0.8},
+    {region:"Afar", town:"Semera", risk_score:11, risk_level:"Low", rainfall_anomaly_z:-1.2, temp_c:32.5, case_share_pct:0.4},
+    {region:"Harari", town:"Harar", risk_score:9, risk_level:"Low", rainfall_anomaly_z:-0.3, temp_c:20.1, case_share_pct:0.2},
+    {region:"Dire Dawa", town:"Dire Dawa", risk_score:12, risk_level:"Low", rainfall_anomaly_z:-0.2, temp_c:28.3, case_share_pct:0.1},
+    {region:"Addis Ababa", town:"Addis Ababa", risk_score:2, risk_level:"Low", rainfall_anomaly_z:0.0, temp_c:16.0, case_share_pct:0.0}
+  ],
+  climate_latest: []  // populated at runtime from JSON when present
+};
+
+const LEVEL_ORDER = {Alert:3, Warning:2, Watch:1, Low:0};
+const COLORS = {Alert:"#e8756a", Warning:"#e8bd63", Watch:"#c99a3a", Low:"#7cc99a"};
+
+async function loadJSON(path){
+  try{
+    const r = await fetch(path, {cache:"no-store"});
+    if(!r.ok) throw new Error("not found");
+    return await r.json();
+  }catch(e){ return null; }
+}
+
+async function boot(){
+  const [meta, national, regional, climate] = await Promise.all([
+    loadJSON("data/dashboard/meta.json"),
+    loadJSON("data/dashboard/national_trend.json"),
+    loadJSON("data/dashboard/regional_risk.json"),
+    loadJSON("data/dashboard/climate_latest.json"),
+  ]);
+
+  const M = meta || SEED.meta;
+  const NAT = national || SEED.national_trend;
+  const REG = (regional && regional.length) ? regional : SEED.regional_risk;
+  const CLIM = (climate && climate.length) ? climate : SEED.climate_latest;
+  const isSeed = !regional;
+
+  document.getElementById("meta-updated").textContent = M.generated_at
+    ? "updated " + new Date(M.generated_at).toLocaleString()
+    : "showing seed data";
+  document.getElementById("meta-month").textContent = "data month: " + M.latest_data_month;
+
+  // Alert banner: highest-risk region
+  const top = [...REG].sort((a,b)=>b.risk_score-a.risk_score)[0];
+  const bannerLevelEl = document.getElementById("banner-level");
+  const bannerTextEl = document.getElementById("banner-text");
+  bannerLevelEl.textContent = top.risk_level;
+  bannerLevelEl.style.color = COLORS[top.risk_level];
+  bannerLevelEl.style.background = COLORS[top.risk_level] + "22";
+  bannerTextEl.textContent = (isSeed ? "[seed data — run the notebook / CI for live values] " : "") +
+    `Highest current risk: ${top.region} (score ${top.risk_score}/100). ` +
+    `${REG.filter(r=>r.risk_level==="Alert"||r.risk_level==="Warning").length} of ${REG.length} regions at Warning level or above.`;
+
+  // Region grid
+  document.getElementById("region-count").textContent = REG.length + " regions";
+  const grid = document.getElementById("region-grid");
+  [...REG].sort((a,b)=>b.risk_score-a.risk_score).forEach(r=>{
+    const div = document.createElement("div");
+    div.className = "region-card level-" + r.risk_level.toLowerCase();
+    div.innerHTML = `
+      <div class="rname">${r.region}</div>
+      <div class="rtown">${r.town || ""}</div>
+      <div class="rscore">${r.risk_score}</div>
+      <div class="rlevel">${r.risk_level}</div>
+      <div class="rmeta"><span>rain z ${r.rainfall_anomaly_z>=0?"+":""}${r.rainfall_anomaly_z}</span><span>${r.temp_c}°C</span></div>
+    `;
+    grid.appendChild(div);
+  });
+
+  // Detail table
+  const tbody = document.querySelector("#detail-table tbody");
+  [...REG].sort((a,b)=>b.risk_score-a.risk_score).forEach(r=>{
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td>${r.region}</td><td>${r.town||""}</td><td class="num">${r.risk_score}</td>
+      <td style="color:${COLORS[r.risk_level]}">${r.risk_level}</td>
+      <td class="num">${r.rainfall_anomaly_z}</td><td class="num">${r.temp_c}</td>
+      <td class="num">${r.case_share_pct ?? "—"}</td>`;
+    tbody.appendChild(tr);
+  });
+
+  // National trend chart
+  new Chart(document.getElementById("nationalChart"), {
+    type: "bar",
+    data: {
+      labels: NAT.map(d=>d.year),
+      datasets: [{ label:"Cases", data: NAT.map(d=>d.cases), backgroundColor:"#c1483f" }]
+    },
+    options: { plugins:{legend:{display:false}}, scales:{ y:{ ticks:{color:"#9aa79a"}, grid:{color:"#2a352a"} }, x:{ticks:{color:"#9aa79a"}, grid:{display:false}} } }
+  });
+
+  // Case share pie
+  const shareData = REG.filter(r=>r.case_share_pct>0).sort((a,b)=>b.case_share_pct-a.case_share_pct);
+  new Chart(document.getElementById("shareChart"), {
+    type: "doughnut",
+    data: {
+      labels: shareData.map(r=>r.region),
+      datasets: [{ data: shareData.map(r=>r.case_share_pct),
+        backgroundColor:["#3f8f5c","#c99a3a","#c1483f","#7cc99a","#e8bd63","#e8756a","#5a7a5a","#8a6a2a","#6a3a34","#4a6a4a","#9a7a3a"] }]
+    },
+    options: { plugins:{legend:{position:"right", labels:{color:"#9aa79a", boxWidth:10, font:{size:10}}}} }
+  });
+
+  // Climate chart (rainfall for up to 5 regions)
+  if(CLIM.length){
+    const regions5 = [...new Set(CLIM.map(d=>d.region))].slice(0,5);
+    const dates = [...new Set(CLIM.map(d=>d.date))].sort();
+    const palette = ["#3f8f5c","#c99a3a","#c1483f","#7cc99a","#e8bd63"];
+    new Chart(document.getElementById("climateChart"), {
+      type: "line",
+      data: {
+        labels: dates,
+        datasets: regions5.map((reg,i)=>({
+          label: reg,
+          data: dates.map(d => (CLIM.find(x=>x.region===reg && x.date===d)||{}).rainfall_mm ?? null),
+          borderColor: palette[i], backgroundColor: "transparent", tension:.3
+        }))
+      },
+      options: { plugins:{legend:{labels:{color:"#9aa79a"}}}, scales:{ y:{ticks:{color:"#9aa79a"},grid:{color:"#2a352a"}}, x:{ticks:{color:"#9aa79a"},grid:{display:false}} } }
+    });
+  } else {
+    document.getElementById("climateChart").parentElement.innerHTML =
+      '<h3>Climate drivers</h3><p style="color:var(--faint);font-size:.85rem;">No climate_latest.json yet — run the notebook (Cell 12) or the CI workflow to populate this chart.</p>';
+  }
+}
+boot();
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+# Save this file as: .github/workflows/update-ews-data.yml
+#
+# Refreshes data/dashboard/*.json (NASA POWER + WHO GHO + NOAA ENSO for Ethiopia)
+# on a schedule and commits the result, so the GitHub Pages dashboard always
+# reflects current Ethiopian climate + published malaria data without anyone
+# re-running the Colab notebook by hand.
+
+name: Update Ethiopia MEWS data
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"   # every Monday 03:00 UTC — adjust to taste
+  workflow_dispatch: {}     # allows manual "Run workflow" from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch fresh Ethiopia climate + malaria data
+        run: python scripts/fetch_ethiopia_data.py
+
+      - name: Commit updated dashboard data
+        run: |
+          git config user.name "ews-data-bot"
+          git config user.email "actions@github.com"
+          git add data/dashboard/*.json
+          git diff --cached --quiet || git commit -m "Auto-update Ethiopia MEWS data [skip ci]"
+          git push
