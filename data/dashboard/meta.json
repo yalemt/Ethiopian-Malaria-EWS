@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-09-21T08:19:33.338540Z",
+  "latest_data_month": "2026-09",
+  "sources": [
+    "NASA POWER (climate)",
+    "WHO GHO OData API (national malaria)",
+    "NOAA Nino 3.4 (ENSO)",
+    "WHO Disease Outbreak News 31-Oct-2024 (regional shares)"
+  ],
+  "note": "Regional-monthly malaria series apportions the national WHO trend by published regional case-share; it is not raw EPHI PHEM/HMIS data."
+}

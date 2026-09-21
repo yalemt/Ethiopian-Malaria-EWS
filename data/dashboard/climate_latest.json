@@ -1,0 +1,1276 @@
+[
+  {
+    "region": "Addis Ababa",
+    "date": "2025-09-01",
+    "rainfall_mm": 297.0,
+    "temp_c": 15.5,
+    "enso": 27.11
+  },
+  {
+    "region": "Addis Ababa",
+    "date": "2025-10-01",
+    "rainfall_mm": 57.4,
+    "temp_c": 14.1,
+    "enso": 26.97
+  },
+  {
+    "region": "Addis Ababa",
+    "date": "2025-11-01",
+    "rainfall_mm": 7.8,
+    "temp_c": 13.1,
+    "enso": 26.79
+  },
+  {
+    "region": "Addis Ababa",
+    "date": "2025-12-01",
+    "rainfall_mm": 19.5,
+    "temp_c": 14.8,
+    "enso": 26.85
+  },
+  {
+    "region": "Addis Ababa",
+    "date": "2026-01-01",
+    "rainfall_mm": 11.8,
+    "temp_c": 15.2,
+    "enso": 26.77
+  },
+  {
+    "region": "Addis Ababa",
+    "date": "2026-02-01",
+    "rainfall_mm": 9.5,
+    "temp_c": 17.9,
+    "enso": 27.23
+  },
+  {
+    "region": "Addis Ababa",
+    "date": "2026-03-01",
+    "rainfall_mm": 143.5,
+    "temp_c": 17.4,
+    "enso": 27.84
+  },
+  {
+    "region": "Addis Ababa",
+    "date": "2026-04-01",
+    "rainfall_mm": 69.6,
+    "temp_c": 17.0,
+    "enso": 28.75
+  },
+  {
+    "region": "Addis Ababa",
+    "date": "2026-05-01",
+    "rainfall_mm": 40.9,
+    "temp_c": 18.6,
+    "enso": 29.27
+  },
+  {
+    "region": "Addis Ababa",
+    "date": "2026-06-01",
+    "rainfall_mm": 36.0,
+    "temp_c": 19.4,
+    "enso": 29.61
+  },
+  {
+    "region": "Addis Ababa",
+    "date": "2026-07-01",
+    "rainfall_mm": 278.4,
+    "temp_c": 18.0,
+    "enso": 29.45
+  },
+  {
+    "region": "Addis Ababa",
+    "date": "2026-08-01",
+    "rainfall_mm": -30969.0,
+    "temp_c": -999.0,
+    "enso": 29.38
+  },
+  {
+    "region": "Addis Ababa",
+    "date": "2026-09-01",
+    "rainfall_mm": -29970.0,
+    "temp_c": -999.0,
+    "enso": null
+  },
+  {
+    "region": "Afar",
+    "date": "2025-09-01",
+    "rainfall_mm": 119.7,
+    "temp_c": 30.8,
+    "enso": 27.11
+  },
+  {
+    "region": "Afar",
+    "date": "2025-10-01",
+    "rainfall_mm": 5.9,
+    "temp_c": 29.7,
+    "enso": 26.97
+  },
+  {
+    "region": "Afar",
+    "date": "2025-11-01",
+    "rainfall_mm": 0.3,
+    "temp_c": 26.8,
+    "enso": 26.79
+  },
+  {
+    "region": "Afar",
+    "date": "2025-12-01",
+    "rainfall_mm": 11.5,
+    "temp_c": 26.0,
+    "enso": 26.85
+  },
+  {
+    "region": "Afar",
+    "date": "2026-01-01",
+    "rainfall_mm": 1.2,
+    "temp_c": 24.8,
+    "enso": 26.77
+  },
+  {
+    "region": "Afar",
+    "date": "2026-02-01",
+    "rainfall_mm": 0.6,
+    "temp_c": 26.6,
+    "enso": 27.23
+  },
+  {
+    "region": "Afar",
+    "date": "2026-03-01",
+    "rainfall_mm": 54.2,
+    "temp_c": 29.1,
+    "enso": 27.84
+  },
+  {
+    "region": "Afar",
+    "date": "2026-04-01",
+    "rainfall_mm": 82.5,
+    "temp_c": 30.2,
+    "enso": 28.75
+  },
+  {
+    "region": "Afar",
+    "date": "2026-05-01",
+    "rainfall_mm": 3.4,
+    "temp_c": 33.9,
+    "enso": 29.27
+  },
+  {
+    "region": "Afar",
+    "date": "2026-06-01",
+    "rainfall_mm": 9.3,
+    "temp_c": 35.6,
+    "enso": 29.61
+  },
+  {
+    "region": "Afar",
+    "date": "2026-07-01",
+    "rainfall_mm": 8.4,
+    "temp_c": 36.2,
+    "enso": 29.45
+  },
+  {
+    "region": "Afar",
+    "date": "2026-08-01",
+    "rainfall_mm": -30969.0,
+    "temp_c": -999.0,
+    "enso": 29.38
+  },
+  {
+    "region": "Afar",
+    "date": "2026-09-01",
+    "rainfall_mm": -29970.0,
+    "temp_c": -999.0,
+    "enso": null
+  },
+  {
+    "region": "Amhara",
+    "date": "2025-09-01",
+    "rainfall_mm": 289.8,
+    "temp_c": 17.8,
+    "enso": 27.11
+  },
+  {
+    "region": "Amhara",
+    "date": "2025-10-01",
+    "rainfall_mm": 87.7,
+    "temp_c": 17.6,
+    "enso": 26.97
+  },
+  {
+    "region": "Amhara",
+    "date": "2025-11-01",
+    "rainfall_mm": 35.7,
+    "temp_c": 17.3,
+    "enso": 26.79
+  },
+  {
+    "region": "Amhara",
+    "date": "2025-12-01",
+    "rainfall_mm": 13.3,
+    "temp_c": 17.1,
+    "enso": 26.85
+  },
+  {
+    "region": "Amhara",
+    "date": "2026-01-01",
+    "rainfall_mm": 0.6,
+    "temp_c": 18.3,
+    "enso": 26.77
+  },
+  {
+    "region": "Amhara",
+    "date": "2026-02-01",
+    "rainfall_mm": 1.4,
+    "temp_c": 20.6,
+    "enso": 27.23
+  },
+  {
+    "region": "Amhara",
+    "date": "2026-03-01",
+    "rainfall_mm": 29.4,
+    "temp_c": 21.3,
+    "enso": 27.84
+  },
+  {
+    "region": "Amhara",
+    "date": "2026-04-01",
+    "rainfall_mm": 61.2,
+    "temp_c": 22.6,
+    "enso": 28.75
+  },
+  {
+    "region": "Amhara",
+    "date": "2026-05-01",
+    "rainfall_mm": 113.5,
+    "temp_c": 22.6,
+    "enso": 29.27
+  },
+  {
+    "region": "Amhara",
+    "date": "2026-06-01",
+    "rainfall_mm": 69.6,
+    "temp_c": 22.4,
+    "enso": 29.61
+  },
+  {
+    "region": "Amhara",
+    "date": "2026-07-01",
+    "rainfall_mm": 288.0,
+    "temp_c": 19.7,
+    "enso": 29.45
+  },
+  {
+    "region": "Amhara",
+    "date": "2026-08-01",
+    "rainfall_mm": -30969.0,
+    "temp_c": -999.0,
+    "enso": 29.38
+  },
+  {
+    "region": "Amhara",
+    "date": "2026-09-01",
+    "rainfall_mm": -29970.0,
+    "temp_c": -999.0,
+    "enso": null
+  },
+  {
+    "region": "Benishangul-Gumuz",
+    "date": "2025-09-01",
+    "rainfall_mm": 357.6,
+    "temp_c": 22.8,
+    "enso": 27.11
+  },
+  {
+    "region": "Benishangul-Gumuz",
+    "date": "2025-10-01",
+    "rainfall_mm": 207.4,
+    "temp_c": 22.9,
+    "enso": 26.97
+  },
+  {
+    "region": "Benishangul-Gumuz",
+    "date": "2025-11-01",
+    "rainfall_mm": 63.3,
+    "temp_c": 23.1,
+    "enso": 26.79
+  },
+  {
+    "region": "Benishangul-Gumuz",
+    "date": "2025-12-01",
+    "rainfall_mm": 5.9,
+    "temp_c": 23.2,
+    "enso": 26.85
+  },
+  {
+    "region": "Benishangul-Gumuz",
+    "date": "2026-01-01",
+    "rainfall_mm": 5.0,
+    "temp_c": 25.2,
+    "enso": 26.77
+  },
+  {
+    "region": "Benishangul-Gumuz",
+    "date": "2026-02-01",
+    "rainfall_mm": 4.5,
+    "temp_c": 27.4,
+    "enso": 27.23
+  },
+  {
+    "region": "Benishangul-Gumuz",
+    "date": "2026-03-01",
+    "rainfall_mm": 12.7,
+    "temp_c": 28.9,
+    "enso": 27.84
+  },
+  {
+    "region": "Benishangul-Gumuz",
+    "date": "2026-04-01",
+    "rainfall_mm": 96.9,
+    "temp_c": 27.9,
+    "enso": 28.75
+  },
+  {
+    "region": "Benishangul-Gumuz",
+    "date": "2026-05-01",
+    "rainfall_mm": 148.2,
+    "temp_c": 26.9,
+    "enso": 29.27
+  },
+  {
+    "region": "Benishangul-Gumuz",
+    "date": "2026-06-01",
+    "rainfall_mm": 259.8,
+    "temp_c": 25.0,
+    "enso": 29.61
+  },
+  {
+    "region": "Benishangul-Gumuz",
+    "date": "2026-07-01",
+    "rainfall_mm": 236.8,
+    "temp_c": 23.5,
+    "enso": 29.45
+  },
+  {
+    "region": "Benishangul-Gumuz",
+    "date": "2026-08-01",
+    "rainfall_mm": -30969.0,
+    "temp_c": -999.0,
+    "enso": 29.38
+  },
+  {
+    "region": "Benishangul-Gumuz",
+    "date": "2026-09-01",
+    "rainfall_mm": -29970.0,
+    "temp_c": -999.0,
+    "enso": null
+  },
+  {
+    "region": "Dire Dawa",
+    "date": "2025-09-01",
+    "rainfall_mm": 515.1,
+    "temp_c": 20.3,
+    "enso": 27.11
+  },
+  {
+    "region": "Dire Dawa",
+    "date": "2025-10-01",
+    "rainfall_mm": 58.3,
+    "temp_c": 19.4,
+    "enso": 26.97
+  },
+  {
+    "region": "Dire Dawa",
+    "date": "2025-11-01",
+    "rainfall_mm": 6.9,
+    "temp_c": 18.5,
+    "enso": 26.79
+  },
+  {
+    "region": "Dire Dawa",
+    "date": "2025-12-01",
+    "rainfall_mm": 41.9,
+    "temp_c": 19.0,
+    "enso": 26.85
+  },
+  {
+    "region": "Dire Dawa",
+    "date": "2026-01-01",
+    "rainfall_mm": 9.3,
+    "temp_c": 18.2,
+    "enso": 26.77
+  },
+  {
+    "region": "Dire Dawa",
+    "date": "2026-02-01",
+    "rainfall_mm": 5.6,
+    "temp_c": 20.3,
+    "enso": 27.23
+  },
+  {
+    "region": "Dire Dawa",
+    "date": "2026-03-01",
+    "rainfall_mm": 143.2,
+    "temp_c": 21.8,
+    "enso": 27.84
+  },
+  {
+    "region": "Dire Dawa",
+    "date": "2026-04-01",
+    "rainfall_mm": 81.6,
+    "temp_c": 22.1,
+    "enso": 28.75
+  },
+  {
+    "region": "Dire Dawa",
+    "date": "2026-05-01",
+    "rainfall_mm": 87.1,
+    "temp_c": 22.9,
+    "enso": 29.27
+  },
+  {
+    "region": "Dire Dawa",
+    "date": "2026-06-01",
+    "rainfall_mm": 21.6,
+    "temp_c": 23.2,
+    "enso": 29.61
+  },
+  {
+    "region": "Dire Dawa",
+    "date": "2026-07-01",
+    "rainfall_mm": 106.0,
+    "temp_c": 23.2,
+    "enso": 29.45
+  },
+  {
+    "region": "Dire Dawa",
+    "date": "2026-08-01",
+    "rainfall_mm": -30969.0,
+    "temp_c": -999.0,
+    "enso": 29.38
+  },
+  {
+    "region": "Dire Dawa",
+    "date": "2026-09-01",
+    "rainfall_mm": -29970.0,
+    "temp_c": -999.0,
+    "enso": null
+  },
+  {
+    "region": "Gambela",
+    "date": "2025-09-01",
+    "rainfall_mm": 170.4,
+    "temp_c": 25.0,
+    "enso": 27.11
+  },
+  {
+    "region": "Gambela",
+    "date": "2025-10-01",
+    "rainfall_mm": 292.0,
+    "temp_c": 24.8,
+    "enso": 26.97
+  },
+  {
+    "region": "Gambela",
+    "date": "2025-11-01",
+    "rainfall_mm": 39.6,
+    "temp_c": 26.0,
+    "enso": 26.79
+  },
+  {
+    "region": "Gambela",
+    "date": "2025-12-01",
+    "rainfall_mm": 36.0,
+    "temp_c": 27.2,
+    "enso": 26.85
+  },
+  {
+    "region": "Gambela",
+    "date": "2026-01-01",
+    "rainfall_mm": 7.4,
+    "temp_c": 29.1,
+    "enso": 26.77
+  },
+  {
+    "region": "Gambela",
+    "date": "2026-02-01",
+    "rainfall_mm": 24.1,
+    "temp_c": 30.8,
+    "enso": 27.23
+  },
+  {
+    "region": "Gambela",
+    "date": "2026-03-01",
+    "rainfall_mm": 43.4,
+    "temp_c": 30.3,
+    "enso": 27.84
+  },
+  {
+    "region": "Gambela",
+    "date": "2026-04-01",
+    "rainfall_mm": 71.7,
+    "temp_c": 29.2,
+    "enso": 28.75
+  },
+  {
+    "region": "Gambela",
+    "date": "2026-05-01",
+    "rainfall_mm": 235.6,
+    "temp_c": 27.0,
+    "enso": 29.27
+  },
+  {
+    "region": "Gambela",
+    "date": "2026-06-01",
+    "rainfall_mm": 172.5,
+    "temp_c": 25.5,
+    "enso": 29.61
+  },
+  {
+    "region": "Gambela",
+    "date": "2026-07-01",
+    "rainfall_mm": 151.6,
+    "temp_c": 24.5,
+    "enso": 29.45
+  },
+  {
+    "region": "Gambela",
+    "date": "2026-08-01",
+    "rainfall_mm": -30969.0,
+    "temp_c": -999.0,
+    "enso": 29.38
+  },
+  {
+    "region": "Gambela",
+    "date": "2026-09-01",
+    "rainfall_mm": -29970.0,
+    "temp_c": -999.0,
+    "enso": null
+  },
+  {
+    "region": "Harari",
+    "date": "2025-09-01",
+    "rainfall_mm": 515.1,
+    "temp_c": 20.3,
+    "enso": 27.11
+  },
+  {
+    "region": "Harari",
+    "date": "2025-10-01",
+    "rainfall_mm": 58.3,
+    "temp_c": 19.4,
+    "enso": 26.97
+  },
+  {
+    "region": "Harari",
+    "date": "2025-11-01",
+    "rainfall_mm": 6.9,
+    "temp_c": 18.5,
+    "enso": 26.79
+  },
+  {
+    "region": "Harari",
+    "date": "2025-12-01",
+    "rainfall_mm": 41.9,
+    "temp_c": 19.0,
+    "enso": 26.85
+  },
+  {
+    "region": "Harari",
+    "date": "2026-01-01",
+    "rainfall_mm": 9.3,
+    "temp_c": 18.2,
+    "enso": 26.77
+  },
+  {
+    "region": "Harari",
+    "date": "2026-02-01",
+    "rainfall_mm": 5.6,
+    "temp_c": 20.3,
+    "enso": 27.23
+  },
+  {
+    "region": "Harari",
+    "date": "2026-03-01",
+    "rainfall_mm": 143.2,
+    "temp_c": 21.8,
+    "enso": 27.84
+  },
+  {
+    "region": "Harari",
+    "date": "2026-04-01",
+    "rainfall_mm": 81.6,
+    "temp_c": 22.1,
+    "enso": 28.75
+  },
+  {
+    "region": "Harari",
+    "date": "2026-05-01",
+    "rainfall_mm": 87.1,
+    "temp_c": 22.9,
+    "enso": 29.27
+  },
+  {
+    "region": "Harari",
+    "date": "2026-06-01",
+    "rainfall_mm": 21.6,
+    "temp_c": 23.2,
+    "enso": 29.61
+  },
+  {
+    "region": "Harari",
+    "date": "2026-07-01",
+    "rainfall_mm": 106.0,
+    "temp_c": 23.2,
+    "enso": 29.45
+  },
+  {
+    "region": "Harari",
+    "date": "2026-08-01",
+    "rainfall_mm": -30969.0,
+    "temp_c": -999.0,
+    "enso": 29.38
+  },
+  {
+    "region": "Harari",
+    "date": "2026-09-01",
+    "rainfall_mm": -29970.0,
+    "temp_c": -999.0,
+    "enso": null
+  },
+  {
+    "region": "Oromia",
+    "date": "2025-09-01",
+    "rainfall_mm": 195.3,
+    "temp_c": 19.9,
+    "enso": 27.11
+  },
+  {
+    "region": "Oromia",
+    "date": "2025-10-01",
+    "rainfall_mm": 61.4,
+    "temp_c": 18.8,
+    "enso": 26.97
+  },
+  {
+    "region": "Oromia",
+    "date": "2025-11-01",
+    "rainfall_mm": 8.7,
+    "temp_c": 18.6,
+    "enso": 26.79
+  },
+  {
+    "region": "Oromia",
+    "date": "2025-12-01",
+    "rainfall_mm": 26.7,
+    "temp_c": 19.8,
+    "enso": 26.85
+  },
+  {
+    "region": "Oromia",
+    "date": "2026-01-01",
+    "rainfall_mm": 6.2,
+    "temp_c": 19.2,
+    "enso": 26.77
+  },
+  {
+    "region": "Oromia",
+    "date": "2026-02-01",
+    "rainfall_mm": 3.9,
+    "temp_c": 21.5,
+    "enso": 27.23
+  },
+  {
+    "region": "Oromia",
+    "date": "2026-03-01",
+    "rainfall_mm": 161.5,
+    "temp_c": 21.1,
+    "enso": 27.84
+  },
+  {
+    "region": "Oromia",
+    "date": "2026-04-01",
+    "rainfall_mm": 88.5,
+    "temp_c": 21.0,
+    "enso": 28.75
+  },
+  {
+    "region": "Oromia",
+    "date": "2026-05-01",
+    "rainfall_mm": 50.8,
+    "temp_c": 22.6,
+    "enso": 29.27
+  },
+  {
+    "region": "Oromia",
+    "date": "2026-06-01",
+    "rainfall_mm": 27.6,
+    "temp_c": 23.9,
+    "enso": 29.61
+  },
+  {
+    "region": "Oromia",
+    "date": "2026-07-01",
+    "rainfall_mm": 72.2,
+    "temp_c": 23.7,
+    "enso": 29.45
+  },
+  {
+    "region": "Oromia",
+    "date": "2026-08-01",
+    "rainfall_mm": -30969.0,
+    "temp_c": -999.0,
+    "enso": 29.38
+  },
+  {
+    "region": "Oromia",
+    "date": "2026-09-01",
+    "rainfall_mm": -29970.0,
+    "temp_c": -999.0,
+    "enso": null
+  },
+  {
+    "region": "SNNP",
+    "date": "2025-09-01",
+    "rainfall_mm": 264.3,
+    "temp_c": 19.1,
+    "enso": 27.11
+  },
+  {
+    "region": "SNNP",
+    "date": "2025-10-01",
+    "rainfall_mm": 221.7,
+    "temp_c": 19.0,
+    "enso": 26.97
+  },
+  {
+    "region": "SNNP",
+    "date": "2025-11-01",
+    "rainfall_mm": 31.8,
+    "temp_c": 18.7,
+    "enso": 26.79
+  },
+  {
+    "region": "SNNP",
+    "date": "2025-12-01",
+    "rainfall_mm": 82.1,
+    "temp_c": 19.8,
+    "enso": 26.85
+  },
+  {
+    "region": "SNNP",
+    "date": "2026-01-01",
+    "rainfall_mm": 11.5,
+    "temp_c": 20.6,
+    "enso": 26.77
+  },
+  {
+    "region": "SNNP",
+    "date": "2026-02-01",
+    "rainfall_mm": 21.0,
+    "temp_c": 23.3,
+    "enso": 27.23
+  },
+  {
+    "region": "SNNP",
+    "date": "2026-03-01",
+    "rainfall_mm": 370.8,
+    "temp_c": 20.6,
+    "enso": 27.84
+  },
+  {
+    "region": "SNNP",
+    "date": "2026-04-01",
+    "rainfall_mm": 316.8,
+    "temp_c": 20.8,
+    "enso": 28.75
+  },
+  {
+    "region": "SNNP",
+    "date": "2026-05-01",
+    "rainfall_mm": 110.7,
+    "temp_c": 20.5,
+    "enso": 29.27
+  },
+  {
+    "region": "SNNP",
+    "date": "2026-06-01",
+    "rainfall_mm": 45.0,
+    "temp_c": 20.2,
+    "enso": 29.61
+  },
+  {
+    "region": "SNNP",
+    "date": "2026-07-01",
+    "rainfall_mm": 209.6,
+    "temp_c": 19.9,
+    "enso": 29.45
+  },
+  {
+    "region": "SNNP",
+    "date": "2026-08-01",
+    "rainfall_mm": -30969.0,
+    "temp_c": -999.0,
+    "enso": 29.38
+  },
+  {
+    "region": "SNNP",
+    "date": "2026-09-01",
+    "rainfall_mm": -29970.0,
+    "temp_c": -999.0,
+    "enso": null
+  },
+  {
+    "region": "Sidama",
+    "date": "2025-09-01",
+    "rainfall_mm": 313.2,
+    "temp_c": 15.0,
+    "enso": 27.11
+  },
+  {
+    "region": "Sidama",
+    "date": "2025-10-01",
+    "rainfall_mm": 257.3,
+    "temp_c": 15.1,
+    "enso": 26.97
+  },
+  {
+    "region": "Sidama",
+    "date": "2025-11-01",
+    "rainfall_mm": 62.4,
+    "temp_c": 14.6,
+    "enso": 26.79
+  },
+  {
+    "region": "Sidama",
+    "date": "2025-12-01",
+    "rainfall_mm": 59.5,
+    "temp_c": 15.1,
+    "enso": 26.85
+  },
+  {
+    "region": "Sidama",
+    "date": "2026-01-01",
+    "rainfall_mm": 8.4,
+    "temp_c": 15.3,
+    "enso": 26.77
+  },
+  {
+    "region": "Sidama",
+    "date": "2026-02-01",
+    "rainfall_mm": 5.6,
+    "temp_c": 17.5,
+    "enso": 27.23
+  },
+  {
+    "region": "Sidama",
+    "date": "2026-03-01",
+    "rainfall_mm": 470.6,
+    "temp_c": 16.4,
+    "enso": 27.84
+  },
+  {
+    "region": "Sidama",
+    "date": "2026-04-01",
+    "rainfall_mm": 236.7,
+    "temp_c": 16.3,
+    "enso": 28.75
+  },
+  {
+    "region": "Sidama",
+    "date": "2026-05-01",
+    "rainfall_mm": 134.8,
+    "temp_c": 16.2,
+    "enso": 29.27
+  },
+  {
+    "region": "Sidama",
+    "date": "2026-06-01",
+    "rainfall_mm": 27.3,
+    "temp_c": 15.9,
+    "enso": 29.61
+  },
+  {
+    "region": "Sidama",
+    "date": "2026-07-01",
+    "rainfall_mm": 208.6,
+    "temp_c": 15.9,
+    "enso": 29.45
+  },
+  {
+    "region": "Sidama",
+    "date": "2026-08-01",
+    "rainfall_mm": -30969.0,
+    "temp_c": -999.0,
+    "enso": 29.38
+  },
+  {
+    "region": "Sidama",
+    "date": "2026-09-01",
+    "rainfall_mm": -29970.0,
+    "temp_c": -999.0,
+    "enso": null
+  },
+  {
+    "region": "Somali",
+    "date": "2025-09-01",
+    "rainfall_mm": 470.4,
+    "temp_c": 19.5,
+    "enso": 27.11
+  },
+  {
+    "region": "Somali",
+    "date": "2025-10-01",
+    "rainfall_mm": 29.1,
+    "temp_c": 18.8,
+    "enso": 26.97
+  },
+  {
+    "region": "Somali",
+    "date": "2025-11-01",
+    "rainfall_mm": 2.1,
+    "temp_c": 18.2,
+    "enso": 26.79
+  },
+  {
+    "region": "Somali",
+    "date": "2025-12-01",
+    "rainfall_mm": 21.4,
+    "temp_c": 19.1,
+    "enso": 26.85
+  },
+  {
+    "region": "Somali",
+    "date": "2026-01-01",
+    "rainfall_mm": 2.8,
+    "temp_c": 18.1,
+    "enso": 26.77
+  },
+  {
+    "region": "Somali",
+    "date": "2026-02-01",
+    "rainfall_mm": 1.4,
+    "temp_c": 19.8,
+    "enso": 27.23
+  },
+  {
+    "region": "Somali",
+    "date": "2026-03-01",
+    "rainfall_mm": 174.8,
+    "temp_c": 21.5,
+    "enso": 27.84
+  },
+  {
+    "region": "Somali",
+    "date": "2026-04-01",
+    "rainfall_mm": 88.2,
+    "temp_c": 20.8,
+    "enso": 28.75
+  },
+  {
+    "region": "Somali",
+    "date": "2026-05-01",
+    "rainfall_mm": 82.5,
+    "temp_c": 21.6,
+    "enso": 29.27
+  },
+  {
+    "region": "Somali",
+    "date": "2026-06-01",
+    "rainfall_mm": 12.3,
+    "temp_c": 21.8,
+    "enso": 29.61
+  },
+  {
+    "region": "Somali",
+    "date": "2026-07-01",
+    "rainfall_mm": 71.9,
+    "temp_c": 21.7,
+    "enso": 29.45
+  },
+  {
+    "region": "Somali",
+    "date": "2026-08-01",
+    "rainfall_mm": -30969.0,
+    "temp_c": -999.0,
+    "enso": 29.38
+  },
+  {
+    "region": "Somali",
+    "date": "2026-09-01",
+    "rainfall_mm": -29970.0,
+    "temp_c": -999.0,
+    "enso": null
+  },
+  {
+    "region": "South Ethiopia",
+    "date": "2025-09-01",
+    "rainfall_mm": 114.0,
+    "temp_c": 20.2,
+    "enso": 27.11
+  },
+  {
+    "region": "South Ethiopia",
+    "date": "2025-10-01",
+    "rainfall_mm": 212.7,
+    "temp_c": 20.0,
+    "enso": 26.97
+  },
+  {
+    "region": "South Ethiopia",
+    "date": "2025-11-01",
+    "rainfall_mm": 34.8,
+    "temp_c": 20.3,
+    "enso": 26.79
+  },
+  {
+    "region": "South Ethiopia",
+    "date": "2025-12-01",
+    "rainfall_mm": 41.2,
+    "temp_c": 21.9,
+    "enso": 26.85
+  },
+  {
+    "region": "South Ethiopia",
+    "date": "2026-01-01",
+    "rainfall_mm": 13.0,
+    "temp_c": 22.7,
+    "enso": 26.77
+  },
+  {
+    "region": "South Ethiopia",
+    "date": "2026-02-01",
+    "rainfall_mm": 21.3,
+    "temp_c": 24.2,
+    "enso": 27.23
+  },
+  {
+    "region": "South Ethiopia",
+    "date": "2026-03-01",
+    "rainfall_mm": 337.9,
+    "temp_c": 21.4,
+    "enso": 27.84
+  },
+  {
+    "region": "South Ethiopia",
+    "date": "2026-04-01",
+    "rainfall_mm": 191.7,
+    "temp_c": 21.2,
+    "enso": 28.75
+  },
+  {
+    "region": "South Ethiopia",
+    "date": "2026-05-01",
+    "rainfall_mm": 207.7,
+    "temp_c": 20.5,
+    "enso": 29.27
+  },
+  {
+    "region": "South Ethiopia",
+    "date": "2026-06-01",
+    "rainfall_mm": 47.1,
+    "temp_c": 20.7,
+    "enso": 29.61
+  },
+  {
+    "region": "South Ethiopia",
+    "date": "2026-07-01",
+    "rainfall_mm": 89.6,
+    "temp_c": 20.8,
+    "enso": 29.45
+  },
+  {
+    "region": "South Ethiopia",
+    "date": "2026-08-01",
+    "rainfall_mm": -30969.0,
+    "temp_c": -999.0,
+    "enso": 29.38
+  },
+  {
+    "region": "South Ethiopia",
+    "date": "2026-09-01",
+    "rainfall_mm": -29970.0,
+    "temp_c": -999.0,
+    "enso": null
+  },
+  {
+    "region": "South West Ethiopia Peoples",
+    "date": "2025-09-01",
+    "rainfall_mm": 392.1,
+    "temp_c": 17.1,
+    "enso": 27.11
+  },
+  {
+    "region": "South West Ethiopia Peoples",
+    "date": "2025-10-01",
+    "rainfall_mm": 248.3,
+    "temp_c": 17.1,
+    "enso": 26.97
+  },
+  {
+    "region": "South West Ethiopia Peoples",
+    "date": "2025-11-01",
+    "rainfall_mm": 41.4,
+    "temp_c": 16.3,
+    "enso": 26.79
+  },
+  {
+    "region": "South West Ethiopia Peoples",
+    "date": "2025-12-01",
+    "rainfall_mm": 112.8,
+    "temp_c": 16.7,
+    "enso": 26.85
+  },
+  {
+    "region": "South West Ethiopia Peoples",
+    "date": "2026-01-01",
+    "rainfall_mm": 40.3,
+    "temp_c": 16.9,
+    "enso": 26.77
+  },
+  {
+    "region": "South West Ethiopia Peoples",
+    "date": "2026-02-01",
+    "rainfall_mm": 46.8,
+    "temp_c": 18.4,
+    "enso": 27.23
+  },
+  {
+    "region": "South West Ethiopia Peoples",
+    "date": "2026-03-01",
+    "rainfall_mm": 245.8,
+    "temp_c": 18.1,
+    "enso": 27.84
+  },
+  {
+    "region": "South West Ethiopia Peoples",
+    "date": "2026-04-01",
+    "rainfall_mm": 242.7,
+    "temp_c": 18.4,
+    "enso": 28.75
+  },
+  {
+    "region": "South West Ethiopia Peoples",
+    "date": "2026-05-01",
+    "rainfall_mm": 254.5,
+    "temp_c": 18.4,
+    "enso": 29.27
+  },
+  {
+    "region": "South West Ethiopia Peoples",
+    "date": "2026-06-01",
+    "rainfall_mm": 195.3,
+    "temp_c": 18.1,
+    "enso": 29.61
+  },
+  {
+    "region": "South West Ethiopia Peoples",
+    "date": "2026-07-01",
+    "rainfall_mm": 253.6,
+    "temp_c": 17.3,
+    "enso": 29.45
+  },
+  {
+    "region": "South West Ethiopia Peoples",
+    "date": "2026-08-01",
+    "rainfall_mm": -30969.0,
+    "temp_c": -999.0,
+    "enso": 29.38
+  },
+  {
+    "region": "South West Ethiopia Peoples",
+    "date": "2026-09-01",
+    "rainfall_mm": -29970.0,
+    "temp_c": -999.0,
+    "enso": null
+  },
+  {
+    "region": "Tigray",
+    "date": "2025-09-01",
+    "rainfall_mm": 178.5,
+    "temp_c": 18.7,
+    "enso": 27.11
+  },
+  {
+    "region": "Tigray",
+    "date": "2025-10-01",
+    "rainfall_mm": 31.6,
+    "temp_c": 16.8,
+    "enso": 26.97
+  },
+  {
+    "region": "Tigray",
+    "date": "2025-11-01",
+    "rainfall_mm": 0.3,
+    "temp_c": 15.9,
+    "enso": 26.79
+  },
+  {
+    "region": "Tigray",
+    "date": "2025-12-01",
+    "rainfall_mm": 6.5,
+    "temp_c": 16.6,
+    "enso": 26.85
+  },
+  {
+    "region": "Tigray",
+    "date": "2026-01-01",
+    "rainfall_mm": 9.9,
+    "temp_c": 15.9,
+    "enso": 26.77
+  },
+  {
+    "region": "Tigray",
+    "date": "2026-02-01",
+    "rainfall_mm": 0.0,
+    "temp_c": 18.6,
+    "enso": 27.23
+  },
+  {
+    "region": "Tigray",
+    "date": "2026-03-01",
+    "rainfall_mm": 41.2,
+    "temp_c": 19.9,
+    "enso": 27.84
+  },
+  {
+    "region": "Tigray",
+    "date": "2026-04-01",
+    "rainfall_mm": 64.2,
+    "temp_c": 20.1,
+    "enso": 28.75
+  },
+  {
+    "region": "Tigray",
+    "date": "2026-05-01",
+    "rainfall_mm": 11.5,
+    "temp_c": 21.9,
+    "enso": 29.27
+  },
+  {
+    "region": "Tigray",
+    "date": "2026-06-01",
+    "rainfall_mm": 2.1,
+    "temp_c": 23.4,
+    "enso": 29.61
+  },
+  {
+    "region": "Tigray",
+    "date": "2026-07-01",
+    "rainfall_mm": 37.2,
+    "temp_c": 22.2,
+    "enso": 29.45
+  },
+  {
+    "region": "Tigray",
+    "date": "2026-08-01",
+    "rainfall_mm": -30969.0,
+    "temp_c": -999.0,
+    "enso": 29.38
+  },
+  {
+    "region": "Tigray",
+    "date": "2026-09-01",
+    "rainfall_mm": -29970.0,
+    "temp_c": -999.0,
+    "enso": null
+  }
+]
