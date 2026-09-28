@@ -79,8 +79,8 @@
   {
     "region": "Addis Ababa",
     "date": "2026-08-01",
-    "rainfall_mm": -30969.0,
-    "temp_c": -999.0,
+    "rainfall_mm": 290.2,
+    "temp_c": 16.6,
     "enso": 29.38
   },
   {
@@ -170,8 +170,8 @@
   {
     "region": "Afar",
     "date": "2026-08-01",
-    "rainfall_mm": -30969.0,
-    "temp_c": -999.0,
+    "rainfall_mm": 78.7,
+    "temp_c": 34.8,
     "enso": 29.38
   },
   {
@@ -261,8 +261,8 @@
   {
     "region": "Amhara",
     "date": "2026-08-01",
-    "rainfall_mm": -30969.0,
-    "temp_c": -999.0,
+    "rainfall_mm": 561.4,
+    "temp_c": 18.8,
     "enso": 29.38
   },
   {
@@ -352,8 +352,8 @@
   {
     "region": "Benishangul-Gumuz",
     "date": "2026-08-01",
-    "rainfall_mm": -30969.0,
-    "temp_c": -999.0,
+    "rainfall_mm": 568.2,
+    "temp_c": 23.7,
     "enso": 29.38
   },
   {
@@ -443,8 +443,8 @@
   {
     "region": "Dire Dawa",
     "date": "2026-08-01",
-    "rainfall_mm": -30969.0,
-    "temp_c": -999.0,
+    "rainfall_mm": 138.9,
+    "temp_c": 22.0,
     "enso": 29.38
   },
   {
@@ -534,8 +534,8 @@
   {
     "region": "Gambela",
     "date": "2026-08-01",
-    "rainfall_mm": -30969.0,
-    "temp_c": -999.0,
+    "rainfall_mm": 146.9,
+    "temp_c": 25.4,
     "enso": 29.38
   },
   {
@@ -625,8 +625,8 @@
   {
     "region": "Harari",
     "date": "2026-08-01",
-    "rainfall_mm": -30969.0,
-    "temp_c": -999.0,
+    "rainfall_mm": 138.9,
+    "temp_c": 22.0,
     "enso": 29.38
   },
   {
@@ -716,8 +716,8 @@
   {
     "region": "Oromia",
     "date": "2026-08-01",
-    "rainfall_mm": -30969.0,
-    "temp_c": -999.0,
+    "rainfall_mm": 131.1,
+    "temp_c": 22.2,
     "enso": 29.38
   },
   {
@@ -807,8 +807,8 @@
   {
     "region": "SNNP",
     "date": "2026-08-01",
-    "rainfall_mm": -30969.0,
-    "temp_c": -999.0,
+    "rainfall_mm": 109.1,
+    "temp_c": 20.1,
     "enso": 29.38
   },
   {
@@ -898,8 +898,8 @@
   {
     "region": "Sidama",
     "date": "2026-08-01",
-    "rainfall_mm": -30969.0,
-    "temp_c": -999.0,
+    "rainfall_mm": 96.1,
+    "temp_c": 15.5,
     "enso": 29.38
   },
   {
@@ -989,8 +989,8 @@
   {
     "region": "Somali",
     "date": "2026-08-01",
-    "rainfall_mm": -30969.0,
-    "temp_c": -999.0,
+    "rainfall_mm": 83.4,
+    "temp_c": 20.8,
     "enso": 29.38
   },
   {
@@ -1080,8 +1080,8 @@
   {
     "region": "South Ethiopia",
     "date": "2026-08-01",
-    "rainfall_mm": -30969.0,
-    "temp_c": -999.0,
+    "rainfall_mm": 46.2,
+    "temp_c": 21.7,
     "enso": 29.38
   },
   {
@@ -1171,8 +1171,8 @@
   {
     "region": "South West Ethiopia Peoples",
     "date": "2026-08-01",
-    "rainfall_mm": -30969.0,
-    "temp_c": -999.0,
+    "rainfall_mm": 320.8,
+    "temp_c": 17.5,
     "enso": 29.38
   },
   {
@@ -1262,8 +1262,8 @@
   {
     "region": "Tigray",
     "date": "2026-08-01",
-    "rainfall_mm": -30969.0,
-    "temp_c": -999.0,
+    "rainfall_mm": 229.4,
+    "temp_c": 20.6,
     "enso": 29.38
   },
   {

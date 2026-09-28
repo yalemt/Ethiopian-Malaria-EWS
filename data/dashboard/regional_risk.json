@@ -1,13 +1,134 @@
 [
   {
+    "region": "Gambela",
+    "town": "Gambela",
+    "lat": 8.25,
+    "lon": 34.5833,
+    "risk_score": 36.3,
+    "risk_level": "Watch",
+    "rainfall_anomaly_z": -14.09,
+    "temp_c": 25.4,
+    "case_share_pct": null
+  },
+  {
+    "region": "Benishangul-Gumuz",
+    "town": "Assosa",
+    "lat": 10.0667,
+    "lon": 34.5333,
+    "risk_score": 33.2,
+    "risk_level": "Watch",
+    "rainfall_anomaly_z": -14.08,
+    "temp_c": 23.7,
+    "case_share_pct": null
+  },
+  {
+    "region": "Oromia",
+    "town": "Adama",
+    "lat": 8.54,
+    "lon": 39.27,
+    "risk_score": 28.1,
+    "risk_level": "Low",
+    "rainfall_anomaly_z": -14.1,
+    "temp_c": 22.2,
+    "case_share_pct": null
+  },
+  {
+    "region": "Dire Dawa",
+    "town": "Dire Dawa",
+    "lat": 9.5931,
+    "lon": 41.8661,
+    "risk_score": 27.6,
+    "risk_level": "Low",
+    "rainfall_anomaly_z": -14.1,
+    "temp_c": 22.0,
+    "case_share_pct": null
+  },
+  {
+    "region": "Harari",
+    "town": "Harar",
+    "lat": 9.3132,
+    "lon": 42.1181,
+    "risk_score": 27.6,
+    "risk_level": "Low",
+    "rainfall_anomaly_z": -14.1,
+    "temp_c": 22.0,
+    "case_share_pct": null
+  },
+  {
+    "region": "South Ethiopia",
+    "town": "Arba Minch",
+    "lat": 6.0333,
+    "lon": 37.55,
+    "risk_score": 26.6,
+    "risk_level": "Low",
+    "rainfall_anomaly_z": -14.09,
+    "temp_c": 21.7,
+    "case_share_pct": null
+  },
+  {
+    "region": "Somali",
+    "town": "Jijiga",
+    "lat": 9.35,
+    "lon": 42.8,
+    "risk_score": 23.3,
+    "risk_level": "Low",
+    "rainfall_anomaly_z": -14.1,
+    "temp_c": 20.8,
+    "case_share_pct": null
+  },
+  {
+    "region": "Tigray",
+    "town": "Mekelle",
+    "lat": 13.4967,
+    "lon": 39.4753,
+    "risk_score": 22.9,
+    "risk_level": "Low",
+    "rainfall_anomaly_z": -14.1,
+    "temp_c": 20.6,
+    "case_share_pct": null
+  },
+  {
+    "region": "SNNP",
+    "town": "Wolaita Sodo",
+    "lat": 6.85,
+    "lon": 37.7667,
+    "risk_score": 21.0,
+    "risk_level": "Low",
+    "rainfall_anomaly_z": -14.09,
+    "temp_c": 20.1,
+    "case_share_pct": null
+  },
+  {
+    "region": "Amhara",
+    "town": "Bahir Dar",
+    "lat": 11.5936,
+    "lon": 37.3908,
+    "risk_score": 17.0,
+    "risk_level": "Low",
+    "rainfall_anomaly_z": -14.06,
+    "temp_c": 18.8,
+    "case_share_pct": null
+  },
+  {
+    "region": "South West Ethiopia Peoples",
+    "town": "Bonga",
+    "lat": 7.2667,
+    "lon": 36.2333,
+    "risk_score": 12.4,
+    "risk_level": "Low",
+    "rainfall_anomaly_z": -14.08,
+    "temp_c": 17.5,
+    "case_share_pct": null
+  },
+  {
     "region": "Addis Ababa",
     "town": "Addis Ababa",
     "lat": 9.03,
     "lon": 38.74,
-    "risk_score": 7.5,
+    "risk_score": 9.3,
     "risk_level": "Low",
-    "rainfall_anomaly_z": -9.78,
-    "temp_c": -999.0,
+    "rainfall_anomaly_z": -14.09,
+    "temp_c": 16.6,
     "case_share_pct": null
   },
   {
@@ -17,85 +138,8 @@
     "lon": 41.0117,
     "risk_score": 7.5,
     "risk_level": "Low",
-    "rainfall_anomaly_z": -9.78,
-    "temp_c": -999.0,
-    "case_share_pct": null
-  },
-  {
-    "region": "Amhara",
-    "town": "Bahir Dar",
-    "lat": 11.5936,
-    "lon": 37.3908,
-    "risk_score": 7.5,
-    "risk_level": "Low",
-    "rainfall_anomaly_z": -9.77,
-    "temp_c": -999.0,
-    "case_share_pct": null
-  },
-  {
-    "region": "Benishangul-Gumuz",
-    "town": "Assosa",
-    "lat": 10.0667,
-    "lon": 34.5333,
-    "risk_score": 7.5,
-    "risk_level": "Low",
-    "rainfall_anomaly_z": -9.78,
-    "temp_c": -999.0,
-    "case_share_pct": null
-  },
-  {
-    "region": "Dire Dawa",
-    "town": "Dire Dawa",
-    "lat": 9.5931,
-    "lon": 41.8661,
-    "risk_score": 7.5,
-    "risk_level": "Low",
-    "rainfall_anomaly_z": -9.78,
-    "temp_c": -999.0,
-    "case_share_pct": null
-  },
-  {
-    "region": "Gambela",
-    "town": "Gambela",
-    "lat": 8.25,
-    "lon": 34.5833,
-    "risk_score": 7.5,
-    "risk_level": "Low",
-    "rainfall_anomaly_z": -9.78,
-    "temp_c": -999.0,
-    "case_share_pct": null
-  },
-  {
-    "region": "Harari",
-    "town": "Harar",
-    "lat": 9.3132,
-    "lon": 42.1181,
-    "risk_score": 7.5,
-    "risk_level": "Low",
-    "rainfall_anomaly_z": -9.78,
-    "temp_c": -999.0,
-    "case_share_pct": null
-  },
-  {
-    "region": "Oromia",
-    "town": "Adama",
-    "lat": 8.54,
-    "lon": 39.27,
-    "risk_score": 7.5,
-    "risk_level": "Low",
-    "rainfall_anomaly_z": -9.78,
-    "temp_c": -999.0,
-    "case_share_pct": null
-  },
-  {
-    "region": "SNNP",
-    "town": "Wolaita Sodo",
-    "lat": 6.85,
-    "lon": 37.7667,
-    "risk_score": 7.5,
-    "risk_level": "Low",
-    "rainfall_anomaly_z": -9.78,
-    "temp_c": -999.0,
+    "rainfall_anomaly_z": -14.1,
+    "temp_c": 34.8,
     "case_share_pct": null
   },
   {
@@ -105,52 +149,8 @@
     "lon": 38.4667,
     "risk_score": 7.5,
     "risk_level": "Low",
-    "rainfall_anomaly_z": -9.78,
-    "temp_c": -999.0,
-    "case_share_pct": null
-  },
-  {
-    "region": "Somali",
-    "town": "Jijiga",
-    "lat": 9.35,
-    "lon": 42.8,
-    "risk_score": 7.5,
-    "risk_level": "Low",
-    "rainfall_anomaly_z": -9.78,
-    "temp_c": -999.0,
-    "case_share_pct": null
-  },
-  {
-    "region": "South Ethiopia",
-    "town": "Arba Minch",
-    "lat": 6.0333,
-    "lon": 37.55,
-    "risk_score": 7.5,
-    "risk_level": "Low",
-    "rainfall_anomaly_z": -9.78,
-    "temp_c": -999.0,
-    "case_share_pct": null
-  },
-  {
-    "region": "South West Ethiopia Peoples",
-    "town": "Bonga",
-    "lat": 7.2667,
-    "lon": 36.2333,
-    "risk_score": 7.5,
-    "risk_level": "Low",
-    "rainfall_anomaly_z": -9.78,
-    "temp_c": -999.0,
-    "case_share_pct": null
-  },
-  {
-    "region": "Tigray",
-    "town": "Mekelle",
-    "lat": 13.4967,
-    "lon": 39.4753,
-    "risk_score": 7.5,
-    "risk_level": "Low",
-    "rainfall_anomaly_z": -9.78,
-    "temp_c": -999.0,
+    "rainfall_anomaly_z": -14.09,
+    "temp_c": 15.5,
     "case_share_pct": null
   }
 ]
